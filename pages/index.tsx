@@ -20,11 +20,7 @@ export default function Home() {
           crossOrigin="true"
           key="base-googlestatic"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600;700&display=swap"
-          rel="stylesheet"
-          key="fonts"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet" />
       </Head>
       <ColorModeScript initialColorMode={"light"} />
       <Box>
