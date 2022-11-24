@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="Portfolio pessoal de Lívia Devolder" />
+        <title>Drink Game</title>
+        <meta name="description" content="Beba e se divirta com seus amigos" />
         <link rel="icon" href="/favicon.ico" key="icon" />
         <link
           rel="preconnect"
