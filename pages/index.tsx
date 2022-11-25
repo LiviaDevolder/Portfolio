@@ -1,13 +1,17 @@
 import { Box, ColorModeScript } from "@chakra-ui/react";
 import Head from "next/head";
 import Menu from "../src/components/Menu";
+import MobileNav from "../src/components/Menu/MobileNav";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Portfolio</title>
-        <meta name="description" content="Portfolio pessoal de Lívia Devolder" />
+        <meta
+          name="description"
+          content="Portfolio pessoal de Lívia Devolder"
+        />
         <link rel="icon" href="/favicon.ico" key="icon" />
         <link
           rel="preconnect"
@@ -20,7 +24,10 @@ export default function Home() {
           crossOrigin="true"
           key="base-googlestatic"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Baumans&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <ColorModeScript initialColorMode={"light"} />
       <Box>
