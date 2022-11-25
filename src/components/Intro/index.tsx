@@ -4,8 +4,8 @@ import Photo from "../../../public/Photo.png";
 
 export default function Intro() {
   return (
-    <Flex alignItems={"center"} justifyContent={'space-around'} flexDir={{ base: "column", md: "row"}}>
-      <Box maxW={"450px"}>
+    <Flex alignItems={"center"} justifyContent={'space-between'} flexDir={{ base: "column", md: "row"}}>
+      <Box maxW={"350px"}>
         <Image src={Photo} alt={"Autora do Site"} />
       </Box>
 

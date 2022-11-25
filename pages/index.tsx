@@ -1,5 +1,6 @@
 import { Box, ColorModeScript } from "@chakra-ui/react";
 import Head from "next/head";
+import Experience from "../src/components/Experience";
 import Intro from "../src/components/Intro";
 import Menu from "../src/components/Menu";
 
@@ -36,8 +37,12 @@ export default function Home() {
       <ColorModeScript initialColorMode={"light"} />
       <Box>
         <Menu />
-        <Box px={"80px"}>
+        <Box
+          px={{ base: "40px", md: "120px" }}
+          paddingTop={{ base: "50px", md: "64px" }}
+        >
           <Intro />
+          <Experience />
         </Box>
       </Box>
     </div>

@@ -14,13 +14,7 @@ import { ISessions } from "../../interfaces";
 import CristalH from "../../../public/CristalH";
 import CloseBtn from "../../../public/CloseBtn";
 import HamburgerMenu from "../../../public/HamburgerMenu";
-
-const sessions: ISessions[] = [
-  { name: "experiência", link: "experiencia" },
-  { name: "formação", link: "formacao" },
-  { name: "projetos", link: "projetos" },
-  { name: "contato", link: "contato" },
-];
+import { sessions } from "../../data/session";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
