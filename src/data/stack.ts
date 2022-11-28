@@ -1,5 +1,5 @@
 export const stack: string[] = [
-  'JavaScript',
+  "JavaScript",
   "Métodos Ágeis",
   "Next.js",
   "Nest.js",

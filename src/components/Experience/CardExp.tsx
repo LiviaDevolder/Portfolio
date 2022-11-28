@@ -1,4 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
+import { stack } from "../../data/stack";
+import DataBox from "../DataBox";
 
 export default function CardExp() {
   return (
@@ -16,6 +18,11 @@ export default function CardExp() {
           Desenvolvo no projeto do e-commerce de diversos países da América
           Latina, sempre buscando as tecnologias mais recentes.
         </Text>
+        <Flex flexDir={"row"} flexWrap={"wrap"} gap={"10px"}>
+          {stack.map((item, index) => {
+            return <DataBox key={index} text={item} />;
+          })}
+        </Flex>
       </Flex>
     </Flex>
   );

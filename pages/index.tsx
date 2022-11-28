@@ -1,4 +1,4 @@
-import { Box, ColorModeScript } from "@chakra-ui/react";
+import { Box, ColorModeScript, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import Experience from "../src/components/Experience";
 import Intro from "../src/components/Intro";
@@ -37,13 +37,15 @@ export default function Home() {
       <ColorModeScript initialColorMode={"light"} />
       <Box>
         <Menu />
-        <Box
+        <Flex
           px={{ base: "40px", md: "120px" }}
           paddingTop={{ base: "50px", md: "64px" }}
+          gap={"50px"}
+          flexDir={'column'}
         >
           <Intro />
           <Experience />
-        </Box>
+        </Flex>
       </Box>
     </div>
   );
