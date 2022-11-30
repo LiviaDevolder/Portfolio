@@ -34,7 +34,7 @@ export default function WithSubnavigation() {
       >
         <Flex flex={{ base: 1 }} justify={"space-around"} alignItems={"center"}>
           <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            textAlign={useBreakpointValue({ base: "center", lg: "left" })}
             fontFamily={"Baumans"}
             fontSize={"40px"}
             color={"#ADB5FF"}
@@ -42,7 +42,7 @@ export default function WithSubnavigation() {
             Lívia Devolder
           </Text>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", lg: "flex" }} ml={10}>
             <Flex alignItems={"center"} gap={"24px"}>
               {sessions.map((item, index) => {
                 return (
@@ -63,7 +63,7 @@ export default function WithSubnavigation() {
             </Flex>
           </Flex>
           <IconButton
-            display={{ base: "flex", md: "none" }}
+            display={{ base: "flex", lg: "none" }}
             onClick={onToggle}
             icon={isOpen ? <CloseBtn /> : <HamburgerMenu />}
             variant={"unstyled"}
@@ -81,7 +81,7 @@ export default function WithSubnavigation() {
 
 const MobileNav = () => {
   return (
-    <Stack bg={"#000852"} p={4} display={{ md: "none" }}>
+    <Stack bg={"#000852"} p={4} display={{ lg: "none" }}>
       {sessions.map((item) => (
         <MobileNavItem key={item.name} {...item} />
       ))}

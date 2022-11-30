@@ -9,13 +9,13 @@ export default function Experience() {
       <Text
         color={"#000852"}
         fontFamily={"Baumans"}
-        fontSize={{ base: "50px", md: "64px" }}
+        fontSize={{ base: "50px", lg: "64px" }}
         id={"experiencia"}
       >
         Experiência
       </Text>
-      <Flex justifyContent={"space-between"}>
-        <Flex flexDir={"column"} maxW={"50%"} gap={"16px"}>
+      <Flex flexDir={{ base: 'column', lg: "row" }} justifyContent={"space-between"} alignItems={{ base: 'center', lg: 'top'}} gap={{ base: "32px", lg: "none"}}>
+        <Flex flexDir={"column"} maxW={{ base: "100%", lg: "50%"}} gap={"16px"}>
           <Text fontSize={"32px"} color={"#FFF"}>
             Desenvolvo aplicações web desde o back end, com <b>Node.js</b>,
             <b> Nest.js</b> e bancos de dados <b>SQL</b>, e front end, com

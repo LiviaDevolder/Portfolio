@@ -4,13 +4,13 @@ import Photo from "../../../public/Photo.png";
 
 export default function Intro() {
   return (
-    <Flex alignItems={"center"} justifyContent={'space-between'} flexDir={{ base: "column", md: "row"}}>
+    <Flex alignItems={{ base: "center", lg: "center" }} justifyContent={'space-between'} flexDir={{ base: "column", lg: "row"}}>
       <Box maxW={"350px"}>
         <Image src={Photo} alt={"Autora do Site"} />
       </Box>
 
       <Flex flexDir={"column"} maxW={'500px'}>
-        <Text color={"#000852"} fontFamily={"Baumans"} fontSize={{ base: "50px", md: "64px"}}>
+        <Text color={"#000852"} fontFamily={"Baumans"} fontSize={{ base: "50px", lg: "64px"}}>
           Desenvolvedora Full Stack
         </Text>
         <Text

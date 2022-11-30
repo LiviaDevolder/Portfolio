@@ -1,7 +1,9 @@
 import { Box, ColorModeScript, Flex } from "@chakra-ui/react";
 import Head from "next/head";
+import Education from "../src/components/Education";
 import Experience from "../src/components/Experience";
 import Intro from "../src/components/Intro";
+import Languages from "../src/components/Languages";
 import Menu from "../src/components/Menu";
 
 export default function Home() {
@@ -38,13 +40,15 @@ export default function Home() {
       <Box>
         <Menu />
         <Flex
-          px={{ base: "40px", md: "120px" }}
-          paddingTop={{ base: "50px", md: "64px" }}
+          px={{ base: "40px", lg: "120px" }}
+          paddingTop={{ base: "50px", lg: "64px" }}
           gap={"50px"}
           flexDir={'column'}
         >
           <Intro />
           <Experience />
+          <Education />
+          <Languages />
         </Flex>
       </Box>
     </div>
