@@ -6,6 +6,7 @@ import Footer from "../src/components/Footer";
 import Intro from "../src/components/Intro";
 import Languages from "../src/components/Languages";
 import Menu from "../src/components/Menu";
+import Projects from "../src/components/Projects";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
           <Education />
           <Languages />
         </Flex>
+        <Projects />
         <Footer />
       </Box>
     </div>
