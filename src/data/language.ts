@@ -12,7 +12,7 @@ export const language: ILanguage[] = [
   },
   {
     name: 'Inglês',
-    level: 'Intermediário',
+    level: 'Avançado',
     image: USA
   },
   {

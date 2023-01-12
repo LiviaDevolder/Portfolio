@@ -52,7 +52,7 @@ export default function Home() {
           <Education />
           <Languages />
         </Flex>
-        <Projects />
+        {/* <Projects /> */}
         <Footer />
       </Box>
     </div>

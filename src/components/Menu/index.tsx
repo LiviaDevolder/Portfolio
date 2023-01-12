@@ -56,7 +56,7 @@ export default function WithSubnavigation() {
                     >
                       {item.name}
                     </Link>
-                    {index !== 3 ? <CristalH /> : null}
+                    {index !== 2 ? <CristalH /> : null}
                   </>
                 );
               })}
